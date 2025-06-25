@@ -40,5 +40,5 @@ RUBIX_CUBE/
 
 1. **Clone the repository**:
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/fazal-bhinder/rubix-s-cube/tree/main
    cd RubiksCubeSolver
