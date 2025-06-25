@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rubik's Cube Solver</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Rubik's Cube Solver</h1>
+
+  <div class="main-container">
+    <div id="cube">
+      <div id="U" class="face"></div>
+      <div id="L" class="face"></div>
+      <div id="F" class="face"></div>
+      <div id="R" class="face"></div>
+      <div id="D" class="face"></div>
+      <div id="B" class="face"></div>
+    </div>
+
+    <div class="color-panel">
+      <h3>Select Color:</h3>
+      <div class="colors">
+        <div class="color-swatch-wrap">
+          <div class="color-swatch" style="background:white;" data-color="white"></div>
+          <div class="color-count" id="count-white">0/9</div>
+        </div>
+        <div class="color-swatch-wrap">
+          <div class="color-swatch" style="background:yellow;" data-color="yellow"></div>
+          <div class="color-count" id="count-yellow">0/9</div>
+        </div>
+        <div class="color-swatch-wrap">
+          <div class="color-swatch" style="background:green;" data-color="green"></div>
+          <div class="color-count" id="count-green">0/9</div>
+        </div>
+        <div class="color-swatch-wrap">
+          <div class="color-swatch" style="background:blue;" data-color="blue"></div>
+          <div class="color-count" id="count-blue">0/9</div>
+        </div>
+        <div class="color-swatch-wrap">
+          <div class="color-swatch" style="background:red;" data-color="red"></div>
+          <div class="color-count" id="count-red">0/9</div>
+        </div>
+        <div class="color-swatch-wrap">
+          <div class="color-swatch" style="background:orange;" data-color="orange"></div>
+          <div class="color-count" id="count-orange">0/9</div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button onclick="clearCube()">Clear</button>
+        <button onclick="scramble()">Scramble</button>
+        <button onclick="solve()">Solve</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="output">
+    <h2>Moves:</h2>
+    <p id="moveList"></p>
+    <h2>Total Moves:</h2>
+    <p id="moveCount">0</p>
+  </div>
+
+  <script src="cube.js"></script>
+</body>
+</html>

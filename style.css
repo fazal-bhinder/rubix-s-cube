@@ -1,0 +1,102 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 20px;
+  background: #f0f0f0;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+#cube {
+  display: grid;
+  grid-template-areas:
+    ". U ."
+    "L F R"
+    ". D ."
+    ". B .";
+  grid-gap: 10px;
+}
+
+.face {
+  display: grid;
+  grid-template-columns: repeat(3, 30px);
+  grid-template-rows: repeat(3, 30px);
+  gap: 2px;
+  background: #ccc;
+  padding: 4px;
+}
+
+.face div {
+  width: 30px;
+  height: 30px;
+  background: #eee;
+  border: 1px solid #999;
+  cursor: pointer;
+}
+
+#U { grid-area: U; }
+#F { grid-area: F; }
+#L { grid-area: L; }
+#R { grid-area: R; }
+#D { grid-area: D; }
+#B { grid-area: B; }
+
+.color-panel {
+  text-align: left;
+  max-width: 180px;
+}
+
+.colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.color-swatch-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-swatch {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #333;
+  cursor: pointer;
+}
+
+.color-count {
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.controls button {
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#output {
+  margin-top: 30px;
+}
+
+#output h2 {
+  margin-bottom: 5px;
+}
