@@ -18,10 +18,10 @@ An interactive, browser-based Rubik's Cube solver where users can fill in cube c
 ## 📂 Project Structure
 
 RUBIX_CUBE/
-├── index.html # Main HTML layout
-├── style.css # Styling for cube, color panel, controls
-├── cube.js # Cube logic and UI interaction scripts
-└── README.md # Project documentation
+─ index.html # Main HTML layout
+─ style.css # Styling for cube, color panel, controls
+─ cube.js # Cube logic and UI interaction scripts
+─ README.md # Project documentation
 
 ---
 
